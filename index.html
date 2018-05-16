@@ -3,10 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BOILERPLATE</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Slider</title>
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <script src="bundle.js"></script>
+    <div class="pic-strip">
+      <div id="photo1" class="photo">
+        <img width="150" height="100" src="assets/graphics/pexels-photo-1036657.jpeg" alt="city skyline">
+      </div>
+      <div id="photo2" class="photo">
+        <img width="150" height="100" src="assets/graphics/pexels-photo-936722.jpeg" alt="city skyline">
+      </div>
+      <div id="photo3" class="photo">
+        <img width="150" height="100" src="assets/graphics/pexels-photo-692103.jpeg" alt="city skyline">
+      </div>
+    </div>
+    <div class="controls">
+      <a id="first-photo" href="#photo1"><div id="button-photo1"></div></a>
+      <a href="#photo2"><div id="button-photo2"></div></a>
+      <a href="#photo3"><div id="button-photo3"></div></a>
+    </div>
   </body>
 </html>

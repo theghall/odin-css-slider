@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}  
+
+.pic-strip {
+  width: 150px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.controls {
+  width: 150px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 5px;
+  transform: translateX(40px);
+}
+
+.photo,
+.photo img {
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity .6s;
+}
+
+#photo1,
+#photo1 img {
+  z-index: 1;
+  opacity: 1;
+  transition: opacity .6s;
+}
+
+div:target,
+div:target img {
+  opacity: 1;
+  z-index: 2;
+}
+
+[id^="button-photo"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+[id^="button-photo"]:active {
+  background: #000;
+}
+
